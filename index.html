@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <title>GitHub Pages</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@unocss/reset/tailwind.css"
+    />
+    <style>
+    [un-cloak] {
+      display: none;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="app" un-cloak></div>
+    <script type="importmap">
+    {
+      "imports": {
+        "@arrow-js/core": "https://esm.sh/@arrow-js/core",
+        "youtubei.js": "https://esm.sh/youtubei.js/web"
+      }
+    }
+    </script>
+    <script type="module" src="/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@unocss/runtime"></script>
+    <script src="/src/utils/iframe.js"></script>
+  </body>
+</html>
